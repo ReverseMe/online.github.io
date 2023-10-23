@@ -1,29 +1,12 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
-	<title>判断手机登录还是电脑登录</title>
-    	<a href="itms-services://?action=download-manifest&url=https://8.141.81.121/dl/down.plist" > <font size="20">点击安装APP</font> </a> 
-</head>
-<body>
-<script type="text/javascript">
-        function browserRedirect() {
-            var sUserAgent = navigator.userAgent.toLowerCase();
-            var bIsIpad = sUserAgent.match(/ipad/i) == "ipad";
-            var bIsIphoneOs = sUserAgent.match(/iphone os/i) == "iphone os";
-            var bIsMidp = sUserAgent.match(/midp/i) == "midp";
-            var bIsUc7 = sUserAgent.match(/rv:1.2.3.4/i) == "rv:1.2.3.4";
-            var bIsUc = sUserAgent.match(/ucweb/i) == "ucweb";
-            var bIsAndroid = sUserAgent.match(/android/i) == "android";
-            var bIsCE = sUserAgent.match(/windows ce/i) == "windows ce";
-            var bIsWM = sUserAgent.match(/windows mobile/i) == "windows mobile";
-            if (bIsIpad || bIsIphoneOs || bIsMidp || bIsUc7 || bIsUc || bIsAndroid || bIsCE || bIsWM) {
-                alert("我是手机登录");
-            } else {
-                alert("我是电脑登录");
-            }
-        }
-        browserRedirect();
+<script>
+    var ua = navigator.userAgent.toLowerCase();
+    var isAndroid = ua.indexOf("android") > -1; 
+    var isIOS = ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1;
+    if (isAndroid) {
+        document.write('<a href="https://8.141.81.121/dl/app.apk" > <font size="20">安装APP3</font> </a>');
+    } else if (isIOS) {
+        document.write('<a href="itms-services://?action=download-manifest&url=https://8.141.81.121/dl/down.plist" > <font size="20">安装APP3</font> </a>');
+    } else {
+        alert("不支持的设备");
+    }
 </script>
-</body>
-</html>
