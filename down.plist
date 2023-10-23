@@ -1,0 +1,46 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<plist version="1.0">
+<dict>
+	<key>items</key>
+	<array>
+		<dict>
+			<key>assets</key>
+			<array>
+				<dict>
+					<key>kind</key>
+					<string>software-package</string>
+					<key>url</key>
+					<string><![CDATA[https://down.guluts.com/o_1hdcm1vajnt31maf16ft1gbr10pma.ipa]]></string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>display-image</string>
+					<key>needs-shine</key>
+					<integer>0</integer>
+					<key>url</key>
+					<string><![CDATA[https://test.guludeveloper.com/data/image/app/2023/10/23/218cd5168574b2817aef115e1e5432fd.png?v=1698088001]]></string>
+				</dict>
+				<dict>
+					<key>kind</key>
+					<string>full-size-image</string>
+					<key>needs-shine</key>
+					<true/>
+					<key>url</key>
+					<string><![CDATA[https://test.guludeveloper.com/data/image/app/2023/10/23/218cd5168574b2817aef115e1e5432fd.png?v=1698088001]]></string>
+				</dict>
+			</array>
+			<key>metadata</key>
+			<dict>
+				<key>bundle-identifier</key>
+				<string>cn.jj.TKLobby</string>
+				<key>bundle-version</key>
+				<string><![CDATA[5.16.04]]></string>
+				<key>kind</key>
+				<string>software</string>				
+				<key>title</key>
+				<string><![CDATA[JJ斗地主]]></string>
+			</dict>
+		</dict>
+	</array>
+</dict>
+</plist>
