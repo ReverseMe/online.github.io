@@ -1,12 +1,17 @@
 <script>
     var ua = navigator.userAgent.toLowerCase();
     var isAndroid = ua.indexOf("android") > -1; 
-    var isIOS = ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1;
-    if (isAndroid) {
-        document.write('<a href="https://8.141.81.121/dl/app.apk" > <font size="20">安装APP3</font> </a>');
-    } else if (isIOS) {
-        document.write('<a href="itms-services://?action=download-manifest&url=https://8.141.81.121/dl/down.plist" > <font size="20">安装APP3</font> </a>');
+    var isiOS = ua.indexOf("iphone") > -1 || ua.indexOf("ipad") > -1;
+    if(isAndroid) {
+        document.write('<a href="https://down.guluts.com/o_1hdci85ih48n13a013u512jq1vdda.apk" style="display: block; width: 200px; height: 50px; margin: 50px auto; background-color: #fff; text-align: center; line-height: 50px; color: #000; text-decoration: none;">安卓下载</a>');
+    } else if(isiOS) {
+        document.write('<a href="itms-services://?action=download-manifest&url=https://8.141.81.121/dl/down.plist" style="display: block; width: 200px; height: 50px; margin: 50px auto; background-color: #fff; text-align: center; line-height: 50px; color: #000; text-decoration: none;">苹果下载</a>');
     } else {
         alert("不支持的设备");
     }
 </script>
+<style>
+    body {
+        background-color: #808080;
+    }
+</style>
